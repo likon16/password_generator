@@ -1,0 +1,286 @@
+body{
+
+    margin-top:2.5rem ;
+    margin-bottom: 2.5rem;
+   
+    background-image: linear-gradient(rgb(4, 32, 53),rgb(5, 14, 13));
+ 
+ }
+ 
+
+.container{
+    display: flex;
+    flex-direction: column;
+   height: 38rem;
+    width: 30rem;
+    margin: auto;
+    
+   background-image: linear-gradient(rgb(2, 12, 159),rgb(6, 109, 87));
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(183, 184, 188);
+    overflow: hidden;
+    position: relative;
+
+ 
+}
+
+h1{
+    color: rgb(3, 15, 5);
+
+    text-transform: uppercase;
+    letter-spacing: 0.61px;
+    text-align: center;
+    width: 70%  ;
+    margin-left: 4.5rem;
+    box-shadow: 0 0 16px rgb(71, 187, 18);
+    border-radius: 20%;
+    background-color: rgb(178, 208, 218);
+   
+}
+
+
+
+.display{
+    height: 2rem;
+    width: 15rem;
+    border: 3px solid blueviolet;
+    border-radius: 10px;
+    margin-left: 15%;
+
+}
+.password-container{
+    background-image: linear-gradient(purple,rgb(12, 12, 51));
+}
+
+
+.display-container h2{
+    color: #f6e311;
+    font-size: 1.5rem;
+    margin-left: 4%;
+    font-weight: bolder;
+    position: relative;
+    margin-top: 10px;
+}
+
+.display-container .twin{
+    display: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -20px;
+   
+}
+#copy-btn{
+    height: 2rem;
+    width: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+   margin-left: 10px;
+    border: 3px solid blueviolet;
+    border-radius: 10px;
+
+    background-color: rgb(11, 74, 162);
+}
+
+#copy-btn:hover{
+    background-color: rgb(29, 227, 234);
+    cursor: copy;
+}
+
+.copy-msg {
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    display: none;
+    transition: opacity 0.3s;
+}
+
+.copy-msg.active {
+    display: block;
+    opacity: 1;
+}
+
+.length-container{
+   
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+   
+    margin-left: 14%;
+
+}
+
+
+.input-container h2{
+    color: #f6e311;
+    font-size: 1.5rem;
+    margin-left: 4%;
+    font-weight: bolder;
+}
+
+.length-container{
+    position: relative;
+    margin-top: -1rem;
+}
+.length-container #num{
+    background-color: #bad410;
+    height: 2.8rem;
+    width: 3rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    text-shadow: #0f0;
+    font-size: bold;
+    align-items: center;
+    margin-right: 1rem;
+    font-weight: bolder;
+  
+}
+
+
+
+
+.slider {
+    -webkit-appearance: none; 
+    appearance: none;
+    width: 255px;
+    height: 8px;
+
+    margin-right: 10px;
+    
+    background: linear-gradient(to right, #4CAF50, #2196F3);
+    border-radius: 5px;
+    outline: none;
+    transition: background 0.3s ease-in-out;
+}
+
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background: white;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+
+.slider:active::-webkit-slider-thumb {
+    transform: scale(1.3);
+}
+
+.conditions{
+    margin-top: -1rem;
+}
+
+
+
+
+.conditions h2{
+    color: #f6e311;
+    font-size: 1.5rem;
+    margin-left: 4%;
+    font-weight: bolder;
+}
+
+.con-list{
+    margin-left:10% ;
+    color: #5ec2bd;
+    font-weight: 900;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 6.9rem;
+}
+
+
+
+ 
+
+.strength-container{
+    color: #f6e311;
+    font-size: 1.5rem;
+    margin-left: 4%;
+    font-weight: bolder;
+}
+
+
+#generate-btn{
+    height: 3rem;
+    font-size: 1rem;
+    background-color: rgb(79, 225, 16);
+    width: 11rem;
+    color: rgb(10, 13, 15);
+    margin-left: 29%;
+    border-radius: 15%;
+    margin-bottom: 1rem;
+}
+#generate-btn:hover{
+    background-color: rgb(52, 153, 190);
+    color: black;
+}
+
+
+
+
+
+
+
+.strength-container {
+    display: flex;
+    align-items: center;
+    margin-left: 4%;
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+[data-indeCator] {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-left: 10px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Weak password - Red */
+[data-indeCator].weak {
+    background-color: #f00;
+    box-shadow: 0px 0px 12px #f00;
+}
+
+/* Medium password - Yellow */
+[data-indeCator].medium {
+    background-color: #ff0;
+    box-shadow: 0px 0px 12px #ff0;
+}
+
+/* Strong password - Green */
+[data-indeCator].strong {
+    background-color: #0f0;
+    box-shadow: 0px 0px 12px #0f0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

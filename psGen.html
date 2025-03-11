@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+</head>
+<link rel="stylesheet" href="psGen.css">
+<body>
+
+    <div class="container">
+
+        <!-- heading -->
+<h1>
+    Password Generator
+</h1>
+
+<!-- copy image  --> 
+ <div class="password-container">
+    
+
+<div class="display-container">
+    <h2>Your Password</h2>
+    <br>
+    <div class="twin">
+        <input readonly class="display" placeholder="PASSWORD" data-passwordDisplay>
+        <button id="copy-btn">
+            <span data-copyMsg></span>
+    
+            <img src="./asserts/document-front-side-with-white-background.jpg" id ="copy" alt="copy" height="15px" width="15px" border-radius="50%"  data-copyBtn>
+        </button>
+    </div>
+
+  
+</div>
+
+<div class="input-container">
+<!-- 
+ Password length -->
+ <h2  id="pas-l">Password Length</h2>
+    <div class="length-container">
+
+ <input type="range" min="1" max="20" class="slider" step="1" data-lengthSlider>
+ <p  id="num" data-lengthNumber> 0  </p>
+
+    </div>
+
+    
+
+<div class="conditions">
+    <h2>Set Condtions</h2>
+
+
+    <div class="con-list">
+        <div>
+            <input type="checkbox" id="uppercase">
+            <label for="uppercase">Includes Uppercase Letters</label>
+        </div>
+        
+        <div>
+            <input type="checkbox" id="lowercase">
+            <label for="lowercase">Includes Lowercase Letters</label>
+        </div>
+        <div>
+            <input type="checkbox" id="numbers">
+            <label for="numbers">Includes Numbers</label>
+        </div>
+        <div>
+            <input type="checkbox" id="symbols">
+            <label for="symbols">Includes Symbols</label>
+        </div>
+    </div>
+  
+    
+</div>
+
+
+<!-- strength -->
+<div class="strength-container">
+    <p>Password Strength</p>
+    <div data-indeCator></div>
+
+</div>
+
+
+
+
+<!-- generate password -->
+
+
+<button id="generate-btn">Generate Password</button>
+</div>
+
+
+ 
+
+
+</div>
+    </div>
+
+    <script src="psGen.js"></script>
+    
+</body>
+</html>
